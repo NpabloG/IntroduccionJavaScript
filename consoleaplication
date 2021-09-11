@@ -1,0 +1,156 @@
+//object, representacion abstracta de un objeto real
+
+console.log({"username" : "Pablo",
+"score": 60.3});
+
+
+//variables
+//Palabras claves var, let
+
+var nameUser = "Keanu";
+let lastname = "Reevers";
+
+//Utilizamos variable
+nameUser = "luis";
+
+//Constante, no se puede cambiar
+const PI = 3.1415;
+
+console.log(nameUser)
+
+
+
+//Operadores
+
+//Se puede utilizar diferentes tipos de operadores matematicos
+
+let numberOne = 60;
+let numberTwo = 100;
+
+let resultUno = numberOne + numberTwo;
+
+console.log(resultUno);
+
+//formula para concatenar, se unen ambas dejando un espacio de por medio,
+let name = "Pablo";
+let lastame = "Garay";
+
+let completeName = name + " " +lastame ;
+console.log (completeName);
+
+
+
+let numeroUno = 100;
+let numeroDos = 500;
+
+let result = numeroUno > numeroDos;
+console.log(result);
+
+//contraseña
+
+let passwordDB = "pepe123"
+let input = "pepe123"
+
+let resultPassword = input == passwordDB;
+console.log(resultPassword);
+
+//CONDICIONALES
+
+//if
+
+let contraseña = "Pablolo123"
+let identificar = "Pablolo123"
+
+let resultContraseña = identificar == contraseña;
+
+//con If determinamos la condicion
+ 
+
+//Condicion si es verdadero, contraseña correcta.
+
+if (resultContraseña === true){
+    console.log ("Contraseña correcta");
+}
+
+//else, el caso contrario
+else {
+    console.log("Contraseña incorrecta");
+}
+
+// IF ELSE 
+
+let score = 70;
+
+//si es mayor mostrar
+if (score> 30){
+    console.log ("Practica mas");
+}
+
+//menor (contrario) mostrar
+else if (score > 15){
+    console.log ("Vas mejorando");
+}
+
+//ningun caso, mostrar
+else {
+    console.log("Necesitar ver tutoriales para mejorar")
+}
+
+
+
+//switch
+
+let typeCard = "Tarjeta debito";
+
+switch(typeCard){
+    case "Tarjeta debito":
+        console.log("Es una tarjeta de debito");
+        break;
+
+    case "Tarjeta credito":
+        console.log("Esto es tarjeta de credito");
+        break;
+    default:
+        console.log("Ninguna tarjeta");
+}
+
+
+//BUCLES (algo repetitivo)
+
+
+
+//se va a repetir 100 veces
+let count = 100;
+while (count>0){
+    console.log ("Hola mundo");
+    count = count -1;
+}
+
+//For otro bucle
+let names = ["Pablo","Garay", "Arnulfo"];
+
+for(let i= names.length - 1; i >= 0; i-- ){
+    console.log(names[i]);
+}
+
+//Funciones
+
+function greeting(person){
+    console.log("Hola" + person);
+}
+
+greeting("Pancho");
+greeting("Bolaños");
+greeting("Jonas");
+
+//funciones 2
+
+function add(n1, n2){
+    console.log(n1 + n2);
+}
+add(3,2);
+add(100, 300);
+
+add(3, 2);
+add(100, 200);
+add(1000, 314134);
